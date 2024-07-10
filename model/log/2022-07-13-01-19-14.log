@@ -1,0 +1,281 @@
+2022-07-13 01:19:14,856 - model_info:合并训练['ASSIST2012', 'EdNet', 'ASSIST2009NSB']
+2022-07-13 01:19:14,858 - Model:MyModel(
+  (kp_embd): Linear(in_features=16, out_features=16, bias=True)
+  (q_embd): Linear(in_features=16, out_features=16, bias=True)
+  (pos_embd_kp): Embedding(5, 16)
+  (pos_embd_q): Embedding(5, 16)
+  (tf_encoder_kp): TFEncoder(
+    (encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (tf_encoder_q): TFEncoder(
+    (encoder): TransformerEncoder(
+      (layers): ModuleList(
+        (0): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (1): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (2): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+        (3): TransformerEncoderLayer(
+          (self_attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=16, out_features=16, bias=True)
+          )
+          (linear1): Linear(in_features=16, out_features=128, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear2): Linear(in_features=128, out_features=16, bias=True)
+          (norm1): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (norm2): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+          (dropout1): Dropout(p=0.1, inplace=False)
+          (dropout2): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (LayerMask_kp): LayerMask(
+    (embeding): Sequential(
+      (c_fc1): Linear(in_features=16, out_features=32, bias=True)
+      (c_relu1): ReLU(inplace=True)
+      (c_fc2): Linear(in_features=32, out_features=32, bias=True)
+      (c_relu2): ReLU(inplace=True)
+      (c_fc3): Linear(in_features=32, out_features=16, bias=True)
+    )
+  )
+  (LayerMask_q): LayerMask(
+    (embeding): Sequential(
+      (c_fc1): Linear(in_features=16, out_features=32, bias=True)
+      (c_relu1): ReLU(inplace=True)
+      (c_fc2): Linear(in_features=32, out_features=32, bias=True)
+      (c_relu2): ReLU(inplace=True)
+      (c_fc3): Linear(in_features=32, out_features=16, bias=True)
+    )
+  )
+  (class_classifier): Sequential(
+    (c_fc1): Linear(in_features=46, out_features=92, bias=True)
+    (c_relu1): ReLU(inplace=True)
+    (c_fc3): Linear(in_features=92, out_features=46, bias=True)
+    (c_relu3): ReLU(inplace=True)
+    (c_fc4): Linear(in_features=46, out_features=10, bias=True)
+    (c_relu4): ReLU(inplace=True)
+    (c_fc5): Linear(in_features=10, out_features=1, bias=True)
+    (c_sigmoid): Sigmoid()
+  )
+)
+2022-07-13 01:19:14,859 - BATCH_SIZE:2048；LR:0.001；MEMORY_LEN：5；EPOCH_NUM：50；NHEAD：2
+2022-07-13 01:19:14,860 - optimizer:Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+2022-07-13 01:19:14,860 - loss_func:BCEWithLogitsLoss()
+2022-07-13 01:19:14,861 - ITEM_COL:['stu_kp_now_acc', 'stu_kp_now_use_time', 'stu_kp_now_len', 'stu_q_now_acc', 'stu_q_now_time', 'stu_q_now_len', 'q_now_acc', 'q_now_use_time', 'q_now_len', 'kp_now_acc', 'kp_now_use_time', 'kp_now_len', 'last_kp_time_passed', 'last_q_time_passed']
+2022-07-13 01:19:14,861 - ITEM_AN_COL:['stu_kp_now_acc_an', 'stu_kp_now_use_time_an', 'stu_kp_now_len_an', 'stu_q_now_acc_an', 'stu_q_now_time_an', 'stu_q_now_len_an', 'q_now_acc_an', 'q_now_use_time_an', 'q_now_len_an', 'kp_now_acc_an', 'kp_now_use_time_an', 'kp_now_len_an', 'last_kp_time_passed', 'last_q_time_passed', 'use_time', 'is_right']
+2022-07-13 01:19:30,932 - Checkpoint path:Checkpoints/add_trian/2022-07-13-01-19-14_all_data.pth.tar
+2022-07-13 01:47:07,046 - Train 0: auc:74.470241836193,f1:67.1856555289089,recall:59.49035615654604,precision:77.16756818473746,acc:66.75248808676986
+2022-07-13 01:49:15,892 - Vaild 0: auc:76.31047627369739,f1:68.89768155244849,recall:61.34465423742231,precision:78.57179071182317,acc:68.29152219729417
+2022-07-13 01:49:15,906 - At 【0】 Epoceh Get Best Model!
+2022-07-13 02:18:19,085 - Train 1: auc:76.3982938354535,f1:68.50640867774847,recall:60.295091707284875,precision:79.30685159886077,acc:68.28254341955343
+2022-07-13 02:20:29,486 - Vaild 1: auc:76.69840071569229,f1:68.76338479823293,recall:60.689545976329015,precision:79.31507203641914,acc:68.43315883699323
+2022-07-13 02:20:29,499 - At 【1】 Epoceh Get Best Model!
+2022-07-13 02:47:45,941 - Train 2: auc:76.6467165115356,f1:68.7508667855282,recall:60.54353207829502,precision:79.53234124231071,acc:68.51142851747169
+2022-07-13 02:49:36,523 - Vaild 2: auc:76.7268758340796,f1:69.01035557491873,recall:61.132882080513006,precision:79.21828114180195,acc:68.56686382486913
+2022-07-13 02:49:36,535 - At 【2】 Epoceh Get Best Model!
+2022-07-13 03:15:39,738 - Train 3: auc:76.7636117641027,f1:68.94166526303968,recall:60.796813625711046,precision:79.6064081138708,acc:68.65973800336151
+2022-07-13 03:17:31,957 - Vaild 3: auc:76.83647541749681,f1:69.30006776046122,recall:61.73653168665637,precision:78.97561840139757,acc:68.68470550909875
+2022-07-13 03:17:31,970 - At 【3】 Epoceh Get Best Model!
+2022-07-13 03:43:18,778 - Train 4: auc:76.85272316197111,f1:69.04153673443932,recall:60.900458811491184,precision:79.69504557038573,acc:68.752525856588
+2022-07-13 03:45:14,253 - Vaild 4: auc:76.88816772552744,f1:67.06719916652197,recall:57.332858330364566,precision:80.7830670124655,acc:67.7646338976137
+2022-07-13 03:45:14,266 - At 【4】 Epoceh Get Best Model!
+2022-07-13 04:11:35,772 - Train 5: auc:76.88845080297575,f1:69.10947907941447,recall:61.00388394379834,precision:79.69911194036287,acc:68.79885683350435
+2022-07-13 04:13:27,842 - Vaild 5: auc:76.76495541080857,f1:70.44574065206982,recall:64.06008787554921,precision:78.24541894309336,acc:69.2274571124255
+2022-07-13 04:39:09,595 - Train 6: auc:76.92989153816194,f1:69.2515420565404,recall:61.171344636746724,precision:79.7912678069629,acc:68.92097924548494
+2022-07-13 04:41:02,433 - Vaild 6: auc:76.95958944998699,f1:68.48073075053416,recall:59.94537465859162,precision:79.85025440932219,acc:68.40823078840619
+2022-07-13 04:41:02,447 - At 【6】 Epoceh Get Best Model!
+2022-07-13 05:06:33,714 - Train 7: auc:76.96234789991442,f1:69.23542138176558,recall:61.090144905211964,precision:79.88690972921643,acc:68.93873106000996
+2022-07-13 05:08:23,943 - Vaild 7: auc:76.87821491216053,f1:69.75462363449216,recall:62.36788979931125,precision:79.12617702448212,acc:69.03596437555238
+2022-07-13 05:33:49,884 - Train 8: auc:76.96181607952418,f1:69.34939885036435,recall:61.28731281701454,precision:79.85383168566645,acc:69.00495414114582
+2022-07-13 05:35:40,346 - Vaild 8: auc:76.87397749760727,f1:68.31782065834278,recall:59.5614139255037,precision:80.0926172353223,acc:68.37310490176083
+2022-07-13 06:02:18,966 - Train 9: auc:76.96716044379247,f1:69.33592752538243,recall:61.24550265714569,precision:79.88914531092128,acc:69.00646493387134
+2022-07-13 06:04:08,972 - Vaild 9: auc:76.88724098207804,f1:67.08370084954272,recall:57.200253334916674,precision:81.0960211010719,acc:67.86321299884425
+2022-07-13 06:29:51,224 - Train 10: auc:76.97307609627322,f1:69.34059225853069,recall:61.23978126684785,precision:79.9112719128225,acc:69.01615918719351
+2022-07-13 06:31:41,516 - Vaild 10: auc:76.93490214495668,f1:67.66129124952587,recall:58.25317658235364,precision:80.69362577107609,acc:68.12042513653772
+2022-07-13 06:57:33,193 - Train 11: auc:77.01229152169338,f1:69.4875537751827,recall:61.4373892855964,precision:79.96545818033923,acc:69.13060173615264
+2022-07-13 06:59:28,355 - Vaild 11: auc:76.93206995381446,f1:66.97234926752257,recall:57.09337766694376,precision:80.98540145985402,acc:67.76123461826093
+2022-07-13 07:24:58,998 - Train 12: auc:77.02854701775512,f1:69.43232202461016,recall:61.338365222749125,precision:79.9870869621361,acc:69.10000818346059
+2022-07-13 07:26:53,497 - Vaild 12: auc:76.96624979557716,f1:68.71512166467093,recall:60.194751217195105,precision:80.04526792293926,acc:68.62011920139597
+2022-07-13 07:26:53,510 - At 【12】 Epoceh Get Best Model!
+2022-07-13 07:52:28,757 - Train 13: auc:77.0455796081973,f1:69.44820750864122,recall:61.368292495076304,precision:79.97837639413467,acc:69.10806574466343
+2022-07-13 07:54:18,379 - Vaild 13: auc:76.95414133057304,f1:70.41255821071734,recall:63.74144005066699,precision:78.6432897050205,acc:69.33170167924399
+2022-07-13 08:19:50,282 - Train 14: auc:77.02536640623178,f1:69.55253995245636,recall:61.51902912407715,precision:79.9993132221898,acc:69.18423487790906
+2022-07-13 08:21:41,607 - Vaild 14: auc:76.88128650066105,f1:68.40458101825605,recall:59.69797727902466,precision:80.08443075615973,acc:68.42749337140526
+2022-07-13 08:47:13,175 - Train 15: auc:77.01857756104444,f1:69.56965174129354,recall:61.5423547922145,precision:80.00514925693362,acc:69.19745431425748
+2022-07-13 08:49:03,058 - Vaild 15: auc:76.91729349482628,f1:68.28285587462014,recall:59.36943355895974,precision:80.3455202892728,acc:68.42409409205248
+2022-07-13 09:14:28,396 - Train 16: auc:77.08748749874424,f1:69.57526352285898,recall:61.48998206564195,precision:80.10871060960505,acc:69.23182484876335
+2022-07-13 09:16:18,132 - Vaild 16: auc:77.03030575617615,f1:70.29895514024854,recall:63.31789573684835,precision:79.01015040379343,acc:69.36909375212454
+2022-07-13 09:16:18,145 - At 【16】 Epoceh Get Best Model!
+2022-07-13 09:41:47,153 - Train 17: auc:77.07546032255794,f1:69.66489817725483,recall:61.69023072606643,precision:80.00742019720602,acc:69.2621666026678
+2022-07-13 09:43:36,821 - Vaild 17: auc:76.91158336815782,f1:68.68892048660483,recall:60.234334797925825,precision:79.90443184204999,acc:68.56119835928116
+2022-07-13 10:08:59,887 - Train 18: auc:77.12503196979236,f1:69.68523369691574,recall:61.668445432240034,precision:80.09780607986829,acc:69.30258030807582
+2022-07-13 10:10:49,648 - Vaild 18: auc:76.9770665325542,f1:68.00470099610912,recall:58.97953528876222,precision:80.29098747137276,acc:68.22693588959142
+2022-07-13 10:36:26,470 - Train 19: auc:77.17114035512161,f1:69.72447180690897,recall:61.705854522649005,precision:80.13837804470279,acc:69.34097962318312
+2022-07-13 10:38:18,670 - Vaild 19: auc:77.00587274690443,f1:67.99464230518254,recall:58.77567984799905,precision:80.64358452138492,acc:68.32211571146917
+2022-07-13 11:04:03,283 - Train 20: auc:77.15535584471729,f1:69.78709560457844,recall:61.83744649949938,precision:80.08224495088386,acc:69.36666309951718
+2022-07-13 11:05:53,878 - Vaild 20: auc:77.05265805171496,f1:68.34921393850392,recall:59.41495467680006,precision:80.44590937106413,acc:68.4966120515784
+2022-07-13 11:05:53,891 - At 【20】 Epoceh Get Best Model!
+2022-07-13 11:31:26,370 - Train 21: auc:77.20988075673965,f1:69.7302672467371,recall:61.722798640069534,precision:80.12511962064188,acc:69.34097962318312
+2022-07-13 11:33:17,411 - Vaild 21: auc:77.13624075279377,f1:69.71950133570793,recall:61.98392906622333,precision:79.66118939817876,acc:69.17533482901625
+2022-07-13 11:33:17,424 - At 【21】 Epoceh Get Best Model!
+2022-07-13 11:58:50,392 - Train 22: auc:77.23121321438296,f1:69.81712050175429,recall:61.85152992177099,precision:80.13770884415806,acc:69.40329982311135
+2022-07-13 12:00:41,120 - Vaild 22: auc:77.12835315147916,f1:70.22818378045021,recall:63.106123579939045,precision:79.16232186305179,acc:69.36796065900695
+2022-07-13 12:26:13,066 - Train 23: auc:77.29730409874327,f1:69.95143415582741,recall:62.059260400277275,precision:80.14339586181026,acc:69.49583587755025
+2022-07-13 12:28:03,342 - Vaild 23: auc:77.08100653369975,f1:67.40547286678375,recall:57.722756600562086,precision:80.99139128019995,acc:68.03997552518865
+2022-07-13 12:53:30,826 - Train 24: auc:77.38999036159636,f1:70.01357087529047,recall:62.15652403534059,precision:80.14442174554533,acc:69.53826397325898
+2022-07-13 12:55:20,524 - Vaild 24: auc:77.29423243873936,f1:70.17497523935292,recall:63.104144400902506,precision:79.03033908387864,acc:69.29091032701066
+2022-07-13 12:55:20,537 - At 【24】 Epoceh Get Best Model!
+2022-07-13 13:20:49,663 - Train 25: auc:77.49851128159878,f1:70.17197607396938,recall:62.434891678677914,precision:80.09790415104567,acc:69.6321849210296
+2022-07-13 13:22:39,519 - Vaild 25: auc:77.3148256738601,f1:69.79536576704545,recall:62.23924316193643,precision:79.43970090436012,acc:69.15947152536995
+2022-07-13 13:22:39,532 - At 【25】 Epoceh Get Best Model!
+2022-07-13 13:48:19,351 - Train 26: auc:77.54627686026897,f1:70.20266535422847,recall:62.46327857669414,precision:80.13115476035885,acc:69.66290437311544
+2022-07-13 13:50:08,920 - Vaild 26: auc:77.41570253242924,f1:69.546580938986,recall:61.65538534615841,precision:79.7542242703533,acc:69.08695356584404
+2022-07-13 13:50:08,933 - At 【26】 Epoceh Get Best Model!
+2022-07-13 14:15:46,414 - Train 27: auc:77.66005488655503,f1:70.25491968156985,recall:62.52291306787549,precision:80.16918353987495,acc:69.70973894760697
+2022-07-13 14:17:38,584 - Vaild 27: auc:77.60315344429863,f1:70.50620401888658,recall:63.54154296797688,precision:79.18557616416733,acc:69.56511886146804
+2022-07-13 14:17:38,596 - At 【27】 Epoceh Get Best Model!
+2022-07-13 14:43:26,281 - Train 28: auc:77.73112273880022,f1:70.32902141054356,recall:62.63668071341336,precision:80.17525477007318,acc:69.76211309542545
+2022-07-13 14:45:18,328 - Vaild 28: auc:77.66226927372053,f1:71.78603167125281,recall:66.34801884178442,precision:78.19505026708032,acc:70.14186325832257
+2022-07-13 14:45:18,340 - At 【28】 Epoceh Get Best Model!
+2022-07-13 15:11:06,752 - Train 29: auc:77.78002514537471,f1:70.35939831789925,recall:62.66396734406461,precision:80.20950401234829,acc:69.79295844690508
+2022-07-13 15:12:58,669 - Vaild 29: auc:77.6073234226069,f1:68.24166780962831,recall:59.08443177769861,precision:80.7579938321701,acc:68.51587463457747
+2022-07-13 15:38:53,578 - Train 30: auc:77.78573915803749,f1:70.4399423309988,recall:62.73438445542266,precision:80.30348269917637,acc:69.87567434862801
+2022-07-13 15:40:45,402 - Vaild 30: auc:77.57585044706279,f1:68.40174115180383,recall:59.40307960258085,precision:80.61345079501504,acc:68.57932784916264
+2022-07-13 16:06:36,450 - Train 31: auc:77.83203686964374,f1:70.4419920217333,recall:62.736364936679614,precision:80.30556541432169,acc:69.87768873892873
+2022-07-13 16:08:33,098 - Vaild 31: auc:77.5082558278681,f1:70.80822635577678,recall:64.19071369196058,precision:78.94698408061926,acc:69.69882384934394
+2022-07-13 16:34:50,949 - Train 32: auc:77.8298158230293,f1:70.50537318517678,recall:62.845951566230596,precision:80.29092013190929,acc:69.91684345039879
+2022-07-13 16:36:47,983 - Vaild 32: auc:77.6489829957465,f1:71.40804442475773,recall:65.40790879942999,precision:78.6201974545022,acc:70.01269064291704
+2022-07-13 17:02:30,504 - Train 33: auc:77.83849212321961,f1:70.46393337556634,recall:62.78257616600834,precision:80.28692192099236,acc:69.8872570928571
+2022-07-13 17:04:22,501 - Vaild 33: auc:77.60714952050485,f1:70.30809238363894,recall:63.14174880259669,precision:79.3094018793815,acc:69.46767285335508
+2022-07-13 17:30:06,353 - Train 34: auc:78.01662428392639,f1:70.8028711130618,recall:63.18747455631718,precision:80.50544046607733,acc:70.18425376281813
+2022-07-13 17:31:56,656 - Vaild 34: auc:77.70261233188184,f1:70.48783173659288,recall:63.34362506432332,precision:79.4484162446629,acc:69.63310444852357
+2022-07-13 17:31:56,669 - At 【34】 Epoceh Get Best Model!
+2022-07-13 17:57:26,018 - Train 35: auc:78.0575071383953,f1:70.86754682056421,recall:63.271314929527875,precision:80.53661761163427,acc:70.23801280396836
+2022-07-13 17:59:15,488 - Vaild 35: auc:77.71897507705788,f1:70.61163053867874,recall:63.600918339072955,precision:79.35939545106562,acc:69.6908921975208
+2022-07-13 17:59:15,501 - At 【35】 Epoceh Get Best Model!
+2022-07-13 18:25:12,194 - Train 36: auc:78.0567236460499,f1:70.92325260257233,recall:63.34789353812976,precision:80.55647278079685,acc:70.28232939058398
+2022-07-13 18:27:02,474 - Vaild 36: auc:77.72301765830588,f1:69.8817187534805,recall:62.09080473419626,precision:79.90830361691289,acc:69.35889591406622
+2022-07-13 18:27:02,486 - At 【36】 Epoceh Get Best Model!
+2022-07-13 18:52:28,146 - Train 37: auc:78.07183830455264,f1:70.90801751624738,recall:63.30058204143607,precision:80.59373651681301,acc:70.28258118937157
+2022-07-13 18:54:18,507 - Vaild 37: auc:77.71944028485305,f1:69.8902125671572,recall:62.17788861180382,precision:79.78666666666666,acc:69.32830239989123
+2022-07-13 19:19:49,622 - Train 38: auc:78.07595006731259,f1:70.90494319071135,recall:63.30080209490906,precision:80.58543718694322,acc:70.27804881119496
+2022-07-13 19:21:40,226 - Vaild 38: auc:77.70414865072365,f1:70.355295233683,recall:63.11799865415826,precision:79.46724477336721,acc:69.54812246470415
+2022-07-13 19:47:16,847 - Train 39: auc:78.08281969222949,f1:70.86430596228762,recall:63.20705931541365,precision:80.63257417320978,acc:70.26357038090862
+2022-07-13 19:49:07,612 - Vaild 39: auc:77.71341299012758,f1:70.07143807960242,recall:62.51039068994181,precision:79.71329059613346,acc:69.42914768735695
+2022-07-13 20:14:38,771 - Train 40: auc:78.07838210334663,f1:70.91943932055594,recall:63.28385797748853,precision:80.65039920803407,acc:70.3068797723739
+2022-07-13 20:16:31,004 - Vaild 40: auc:77.71270528988393,f1:70.46362865667699,recall:63.33372916914064,precision:79.4024962159748,acc:69.60251093434859
+2022-07-13 20:41:59,130 - Train 41: auc:78.07954554292577,f1:70.93999822567449,recall:63.34591305687282,precision:80.6028991350755,acc:70.30738336994908
+2022-07-13 20:43:53,057 - Vaild 41: auc:77.70866837422479,f1:70.10412161937396,recall:62.56382852392828,precision:79.71102201376806,acc:69.4506764565912
+2022-07-13 21:09:20,685 - Train 42: auc:78.08553431098146,f1:70.90886672174203,recall:63.2739555712038,precision:80.6391362266003,acc:70.29630422329517
+2022-07-13 21:11:10,486 - Vaild 42: auc:77.6985465636869,f1:70.30718232044198,recall:62.96560186834501,precision:79.58673137539401,acc:69.55152174405693
+2022-07-13 21:36:41,808 - Train 43: auc:78.08363895062959,f1:70.96906962415281,recall:63.36593792291527,precision:80.64554072787867,acc:70.33986541354803
+2022-07-13 21:38:31,843 - Vaild 43: auc:77.71191027137516,f1:70.27409528653405,recall:62.896330602066264,precision:79.6126963449157,acc:69.53679153352823
+2022-07-13 22:04:09,559 - Train 44: auc:78.08853486294919,f1:70.98550531816602,recall:63.39982615775634,precision:80.63311792807946,acc:70.34767117596328
+2022-07-13 22:06:00,705 - Vaild 44: auc:77.72960576763828,f1:70.4084222607237,recall:63.13779044452361,precision:79.57147489461475,acc:69.6161080517597
+2022-07-13 22:06:00,717 - At 【44】 Epoceh Get Best Model!
+2022-07-13 22:31:41,295 - Train 45: auc:78.11746725918279,f1:71.0796348601668,recall:63.51799487275408,precision:80.684953332942,acc:70.42799498920412
+2022-07-13 22:33:32,779 - Vaild 45: auc:77.72003740119591,f1:70.28940614213647,recall:62.87455963266437,precision:79.68695128681081,acc:69.5696512339384
+2022-07-13 22:59:13,140 - Train 46: auc:78.11248104982906,f1:70.98127518077159,recall:63.36769835069922,precision:80.67421585216894,acc:70.35661003292269
+2022-07-13 23:01:04,752 - Vaild 46: auc:77.71451135370575,f1:70.31723223167901,recall:62.9537267941258,precision:79.63148407770879,acc:69.57191742017359
+2022-07-13 23:26:51,336 - Train 47: auc:78.11169550198933,f1:71.01711080496936,recall:63.41148899182502,precision:80.6958294478562,acc:70.38770718318992
+2022-07-13 23:28:47,221 - Vaild 47: auc:77.71801074662321,f1:70.46033408677435,recall:63.23872857538693,precision:79.54392690881028,acc:69.64330228658191
+2022-07-13 23:57:24,356 - Train 48: auc:78.11347462055907,f1:71.03400864384311,recall:63.43767535511129,precision:80.69706444669005,acc:70.39979352499418
+2022-07-13 23:59:15,564 - Vaild 48: auc:77.71566267480188,f1:70.39924038334142,recall:63.098206863792896,precision:79.61094741047795,acc:69.62177351734765
+2022-07-14 00:26:38,282 - Train 49: auc:78.12403055393101,f1:71.02260333313205,recall:63.40818818973011,precision:80.71536216294952,acc:70.3971496377245
+2022-07-14 00:28:28,920 - Vaild 49: auc:77.71512001106294,f1:70.29596789350906,recall:62.920080750504695,precision:79.63078926934348,acc:69.5571872096449
+2022-07-14 00:37:05,285 - ASSIST2012-Test Best Model: auc:76.03880686688206,f1:80.60891418007454,recall:80.37866822844907,precision:80.84048300735326,acc:73.148
+2022-07-14 00:44:47,242 - EdNet-Test Best Model: auc:73.10664214873643,f1:54.57523987830564,recall:42.21780446648768,precision:77.16069421900362,acc:65.70899999999999
+2022-07-14 00:51:34,321 - ASSIST2009NSB-Test Best Model: auc:80.77700143959052,f1:73.89147052526856,recall:68.14038021577304,precision:80.70284024482498,acc:72.35733333333333
